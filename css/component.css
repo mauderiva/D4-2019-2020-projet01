@@ -1,0 +1,94 @@
+*,
+*:after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* General styles and layout */
+
+body {
+	color: #fff;
+	font-family: 'Sue Ellen Francisco', cursive;
+	background-repeat:no-repeat;
+}
+
+.container {
+		display: block;
+	overflow: hidden;
+	/* we don't want the pseudo-elements sticking out */
+}
+
+section {
+  background-color: #8ed2ed;
+  position: relative;
+	    padding-top: 1em;
+	    padding-bottom: 10em;
+	color: #fff;
+	text-align: center;
+	height: 100%;
+}
+
+section p {
+	color: #fff;
+	font-size: 2.3em;
+	line-height: 1.5;
+}
+
+.text:first-child {
+	text-align: center;
+}
+
+.text:nth-child(2) {
+	text-align: left;
+}
+
+
+.column {
+	width: 39%;
+}
+
+.column {
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+
+
+section.color h2 {
+	color: #fff;
+	font-family: 'Mansalva', cursive;
+}
+
+h2{
+font-family: 'Mansalva', cursive;
+}
+
+
+/* Common style for pseudo-elements */
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 54em) {
+	.column {
+		display: block;
+		width: 100% !important;
+	}
+
+	.text:first-child,
+	.text:nth-child(2) {
+		text-align: center;
+	}
